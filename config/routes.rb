@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   get 'admin/home', to: 'store_admin#home'
   get 'admin/orders', to: 'store_admin#orders'
   get 'admin/invoice', to: 'store_admin#invoice'
+
+  # resources :static, only: [:home]
+  # resources :store_admin, only: [:home, :orders, :invoice]
 end
